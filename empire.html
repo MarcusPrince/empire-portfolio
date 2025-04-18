@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empire development </title>
+    <link rel="stylesheet" href="empire.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Splash&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Marcus Prince</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Marcus Prince</div>
+        <div class="hamburger-menu"></div>
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+
+    </nav>
+
+  <section id="profile">
+    <div class="section__pic-container ">
+        <img src="./images/unnamed.jpg" class="img-div" alt="the-owners-pic">
+    </div>
+      <p class="section__text__p1">Hello, I'm </p>
+      <h1>Marcus Prince</h1>
+      <p class="section__text__p2">Empire Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2">Download CV</button>
+        <button class="btn btn-color1" onclick="location.href='./#contact'">Contact Info</button>
+        <div id="socials-container">
+            <img src="./images/download.jpg" alt="my github profile" height="50" class="icon" onclick="location.href='https://github.com/MarcusPrince/' ">
+            <img src="./images/download.png" alt="my linkedin profile" height="50" class="icon">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <script src="empire.js"></script>
+</body>
+</html>
