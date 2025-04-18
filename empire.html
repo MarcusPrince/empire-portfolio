@@ -9,57 +9,93 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Splash&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Marcus Prince</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Marcus Prince</div>
-        <div class="hamburger-menu"></div>
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
 
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+    
+
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+               
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+          
+          </div>
         </div>
+      </nav>
 
-    </nav>
 
-  <section id="profile">
-    <div class="section__pic-container ">
-        <img src="./images/unnamed.jpg" class="img-div" alt="the-owners-pic">
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./images/unnamed.jpg" class="img-div" alt="the-owners-pic" height="300">
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <p class="section__text__p1">Hello, I'm </p>
+        <h1>Marcus Prince</h1>
+    </section>
+        <h1 class="title">Empire Developer</h1>
+        <div class="what-i-do">
+           <h1 class="heading">Mission</h1>
+           <p>My mission is to take those that aspire to be great to achieve their potential.<br/>
+            Anybody can Develop a tempire, we assist you in Developing a <a href="#">Empire</a>
+        </p>
+        </div>
+        <div class="what-i-do">hello</div>
+        <div class="what-i-do">hello</div>
+        <div class="what-i-do">hello</div>
+        
+          
+
+
+            <div id="socials-container">
+                <img src="./images/download.jpg" alt="my github profile" height="50" class="icon" onclick="location.href='https://github.com/MarcusPrince/' ">
+                <img src="./images/download.png" alt="my linkedin profile" height="50" class="icon">
+                
+            </div>
+          
     </div>
-      <p class="section__text__p1">Hello, I'm </p>
-      <h1>Marcus Prince</h1>
-      <p class="section__text__p2">Empire Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2">Download CV</button>
-        <button class="btn btn-color1" onclick="location.href='./#contact'">Contact Info</button>
-        <div id="socials-container">
-            <img src="./images/download.jpg" alt="my github profile" height="50" class="icon" onclick="location.href='https://github.com/MarcusPrince/' ">
-            <img src="./images/download.png" alt="my linkedin profile" height="50" class="icon">
 
-        </div>
-      </div>
-    </div>
-  </section>
+        
+  
+        
+
+    
 
 
+     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="empire.js"></script>
 </body>
 </html>
