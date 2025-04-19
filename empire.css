@@ -9,7 +9,7 @@ html {
 
 
 body{
-   background: linear-gradient(to right, rgba(90, 185, 114, 0.6), rgba(166, 252, 246, 0.2));
+   background: linear-gradient(to right, rgba(44, 46, 44, 0.6), rgba(166, 252, 246, 0.2));
     
   
 
@@ -24,7 +24,7 @@ body{
 
  p {
     font-weight: default;
-    font-size: 33px;
+    font-size: 30px;
     padding: 25px;
  }
 
@@ -58,7 +58,7 @@ div ,h1  {
 }
 .what-i-do {
      background-color: white;
-    opacity:80%;
+ 
     min-height:30vh;
     border-radius: 10px;
     box-shadow: 10px 5px 5px 5px;
@@ -106,10 +106,30 @@ div ,h1  {
     align-content: center;
  }
 
-
+.fig{
+  font-size: 25px;
+}
 
   
- 
+ /* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Apply the Animation to the Button */
+.bounce-button {
+  animation: bounce 2s infinite;
+  box-shadow: 5px 5px 5px 3px black;
+}
+
   
 
 
