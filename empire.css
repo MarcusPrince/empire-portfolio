@@ -9,7 +9,12 @@ html {
 
 
 body{
-    background: linear-gradient(to right, rgba(90, 185, 114, 0.6), rgba(166, 252, 246, 0.2));
+   background: linear-gradient(to right, rgba(90, 185, 114, 0.6), rgba(166, 252, 246, 0.2));
+    
+  
+
+
+
     font-family: "Condiment", cursive;
     font-weight: 300;
     font-style: normal;
@@ -52,7 +57,7 @@ div ,h1  {
     font-size: 70px;
 }
 .what-i-do {
-    background-color: white;
+     background-color: white;
     opacity:80%;
     min-height:30vh;
     border-radius: 10px;
@@ -62,6 +67,57 @@ div ,h1  {
 .icon{
     border-radius: 50%;
 }
+
+/* animation slide */
+
+.container {
+    overflow: hidden; /* Ensures content doesn't overflow during animation */
+    width: 100%;
+  }
+  
+  .box {
+  
+    
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    left: -100%; /* Start off-screen to the left */
+    animation: slideIn 1s ease-out forwards; /* Apply the animation */
+  }
+  
+  /* Keyframes for Slide-In Animation */
+  @keyframes slideIn {
+    from {
+      left: -100%; /* Start off-screen */
+    }
+    to {
+      left: 0; /* End at the final position */
+    }
+  }
+ .my-links {
+    font-size: 30px;
+ }
+
+ #socials-container{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    align-content: center;
+ }
+
+
+
+  
+ 
+  
+
+
+
+
+
+
+
 
 
 
